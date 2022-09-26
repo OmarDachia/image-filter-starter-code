@@ -32,7 +32,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   app.get("/filteredimage",async (req:Request,res:Response)=>{
     // console.log("in");
-    const img_url= req.query.image_url;
+    const img_url= req.query.img_url;
     //Validate url
     // const isUrl = img_url.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
     if(!img_url){
